@@ -1,0 +1,16 @@
+target
+.idea
+doc
+test
+.gitignore
+.hgignore
+.lein-failures
+.nrepl-port
+carimbo.iml
+CHANGELOG.md
+Dockerfile
+LICENSE
+README.md
+.git
+.github
+/resources
