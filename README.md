@@ -1,6 +1,11 @@
-# stethoscope
+# Stethoscope
 
-A Clojure library designed to ... well, that part is up to you.
+![Stethoscope](https://www.accoson.com/wp-content/uploads/2021/03/Physician-Black-Shadow.jpeg)
+
+_A medical instrument consisting of a chest piece connected to earpieces by tubing, used for auscultation (listening to
+internal sounds of the body, especially heart and lungs) to diagnose and monitor health conditions._
+
+****Service in order to collect data about SIGAA UFPI availability.****
 
 ## Usage
 
