@@ -5,7 +5,7 @@
 _A medical instrument consisting of a chest piece connected to earpieces by tubing, used for auscultation (listening to
 internal sounds of the body, especially heart and lungs) to diagnose and monitor health conditions._
 
-****Service in order to collect data about SIGAA UFPI availability.****
+Service in order to collect data about SIGAA UFPI availability.
 
 ## Usage
 
@@ -13,7 +13,7 @@ FIXME
 
 ## License
 
-Copyright © 2024 FIXME
+Copyright © 2024 Bruno do Nascimento Maciel
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
