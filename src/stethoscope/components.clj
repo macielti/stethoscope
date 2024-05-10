@@ -8,8 +8,8 @@
 (def system
   (component/system-map
     :config (component.config/new-config "resources/config.example.edn" :test :edn)
-    :postgresql (component/using (component.postgresql/new-postgresql) [:config])
-    :jobs (component/using (jobs/new-jobs) [:config :postgresql])))
+    #_:postgresql #_(component/using (component.postgresql/new-postgresql) [:config])
+    :jobs (component/using (jobs/new-jobs) [:config #_:postgresql])))
 
 (defn start-system! []
   (component/start system))

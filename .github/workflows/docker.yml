@@ -13,9 +13,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build and Push Docker Image
         run: |
-          VERSION=$(date +%s)
-          docker login docker.pkg.github.com --username macielti --password ${{ secrets.GITHUB_TOKEN }}
-          docker buildx build . --platform linux/amd64 --tag docker.pkg.github.com/macielti/stethoscope/stethoscope:${VERSION}
-          docker push docker.pkg.github.com/macielti/stethoscope/stethoscope:${VERSION}
+          ls
         env:
           CI: true
