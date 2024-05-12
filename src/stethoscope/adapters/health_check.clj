@@ -10,9 +10,9 @@
 
 (s/defn ->health-check
   [response :- s/Any]
-  {:id           (random-uuid)
-   :code         (:status response)
-   :status       (if (= (:status response) 200)
-                   :success
-                   :failure)
-   :requested-at (jt/local-date-time (jt/zone-id "UTC"))})
+  {:id         (random-uuid)
+   :status     (if (= (:status response) 200)
+                 :success
+                 :failure)
+   :started-at (jt/local-date-time (jt/zone-id "UTC"))
+   :ended-at   (jt/local-date-time (jt/zone-id "UTC"))})

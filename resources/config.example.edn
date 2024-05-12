@@ -1,8 +1,5 @@
 {:test {:service-name "stethoscope"
-        :service      {:host "0.0.0.0"
-                       :port 8080}
-        :postgresql   {:host     "db"
-                       :port     5432
-                       :database "stethoscope"
-                       :username "stethoscope-username"
-                       :password "stethoscope-password"}}}
+        :twitter-auth {:consumer-key        "example"
+                       :consumer-secret     "example"
+                       :access-token        "example"
+                       :access-token-secret "example"}}}

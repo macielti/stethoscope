@@ -1,0 +1,34 @@
+version: "3.5"
+
+services:
+  stethoscope:
+    hostname: stethoscope
+    #image: ghcr.io/macielti/carimbo/carimbo:1708271192
+    build: .
+    volumes:
+      - ./resources/config.edn:/app/resources/config.edn
+      - ./resources/schema.sql:/app/resources/schema.sql
+    depends_on:
+      - db
+    deploy:
+      resources:
+        limits:
+          memory: "100MB"
+
+  db:
+    image: postgres:16-alpine
+    hostname: db
+    environment:
+      - POSTGRES_DB=carimbo
+      - POSTGRES_USER=carimbo-miguel
+      - POSTGRES_PASSWORD=xerox
+    ports:
+      - "5432:5432"
+    deploy:
+      resources:
+        limits:
+          memory: "50MB"
+
+networks:
+  default:
+    driver: bridge

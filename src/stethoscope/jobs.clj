@@ -9,9 +9,9 @@
   (start [component]
     (let [pool (at-at/mk-pool)]
 
-      (at-at/interspaced 1000 #(try (controllers.health-check/perform-health-check! (:postgresql postgresql))
-                                    (catch Exception ex
-                                      (log/error ex))) pool)
+      (at-at/interspaced 15000 #(try (controllers.health-check/perform-health-check! (:postgresql postgresql))
+                                     (catch Exception ex
+                                       (log/error ex))) pool)
 
       (merge component {:jobs {:pool pool}})))
 
